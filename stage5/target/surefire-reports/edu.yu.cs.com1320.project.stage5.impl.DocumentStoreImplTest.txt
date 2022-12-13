@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------------
+Test set: edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest
+-------------------------------------------------------------------------------
+Tests run: 31, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.244 s <<< FAILURE! - in edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllWithPrefix  Time elapsed: 0.118 s  <<< FAILURE!
+java.lang.AssertionError: node.entryCount < BTreeImpl.MAX
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllWithPrefix(DocumentStoreImplTest.java:382)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testPutNewVersionOfDocumentBinary  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testPutNewVersionOfDocumentBinary(DocumentStoreImplTest.java:481)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocBytesViaSearch  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocBytesViaSearch(DocumentStoreImplTest.java:258)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocCountViaPut  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocCountViaPut(DocumentStoreImplTest.java:154)
+Caused by: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocCountViaPut(DocumentStoreImplTest.java:154)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocsWhenDoubleMaxViaPut  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocsWhenDoubleMaxViaPut(DocumentStoreImplTest.java:300)
+Caused by: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocsWhenDoubleMaxViaPut(DocumentStoreImplTest.java:300)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllTxt  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: node.entryCount < BTreeImpl.MAX
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllTxt(DocumentStoreImplTest.java:350)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxBytesWhenDoubleMaxViaPut  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxBytesWhenDoubleMaxViaPut(DocumentStoreImplTest.java:319)
+Caused by: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxBytesWhenDoubleMaxViaPut(DocumentStoreImplTest.java:319)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testPutNewVersionOfDocumentTxt  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testPutNewVersionOfDocumentTxt(DocumentStoreImplTest.java:496)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUndoAfterMaxBytes  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: uri1 should've been pushed out of memory ==> expected: <null> but was: <edu.yu.cs.com1320.project.stage5.impl.DocumentImpl@d3759d16>
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUndoAfterMaxBytes(DocumentStoreImplTest.java:281)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUndoAfterMaxDocCount  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: uri1 should've been pushed out of memory ==> expected: <null> but was: <edu.yu.cs.com1320.project.stage5.impl.DocumentImpl@ecc1417b>
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUndoAfterMaxDocCount(DocumentStoreImplTest.java:208)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testDeleteDoc  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testDeleteDoc(DocumentStoreImplTest.java:537)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testDeleteDocReturnValue  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testDeleteDocReturnValue(DocumentStoreImplTest.java:546)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllBinary  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: node.entryCount < BTreeImpl.MAX
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage3DeleteAllBinary(DocumentStoreImplTest.java:361)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUpdateDocLastUseTimeOnOverwrite  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestUpdateDocLastUseTimeOnOverwrite(DocumentStoreImplTest.java:117)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocBytesViaPut  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocBytesViaPut(DocumentStoreImplTest.java:227)
+Caused by: java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocBytesViaPut(DocumentStoreImplTest.java:227)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testGetTxtDocAsBinary  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.testGetTxtDocAsBinary(DocumentStoreImplTest.java:514)
+
+edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocCountViaSearch  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.cs.com1320.project.stage5.impl.DocumentStoreImplTest.stage4TestMaxDocCountViaSearch(DocumentStoreImplTest.java:185)
+
